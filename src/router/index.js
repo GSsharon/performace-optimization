@@ -54,6 +54,13 @@ const router = new VueRouter({
       meta: {
         title: '4-webp',
       }
+    },{
+      path: '/preloadjs',
+      name: 'preloadjs',
+      component: () => import('../pages/7-preloadjs的使用'),
+      meta: {
+        title: '7-preloadjs的使用',
+      }
     }
   ],
 });

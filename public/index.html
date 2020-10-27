@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-12 09:56:32
- * @LastEditTime: 2020-10-15 10:27:34
+ * @LastEditTime: 2020-10-22 16:01:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \性能\performace-optimization\public\index.html
@@ -9,14 +9,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- <meta http-equiv="x-dns-prefetch-control" content="on" /> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">  
     <meta name="referrer" content="no-referrer"/>
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <link rel="dns-prefetch" href="https://da.dun.163.com" /> -->
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <!-- <script src="1.js" type="text/javascript" charset="utf-8" defer></script> -->
-    <!-- <script src="./jquery-3.1.1.min.js" defer></script> -->
+    <script src="https://lib.baomitu.com/vue/3.0.2/vue.cjs.min.js"></script>
+    <!-- <link rel="preload" href="https://vd2.bdstatic.com/mda-kjecya9qygrw9cng/sc/mda-kjecya9qygrw9cng.mp4" as="fetch" type="video/mp4" crossorigin> -->
+    <!-- <link rel="preload" href="//at.alicdn.com/t/font_1980408_hg6ralggtc4.woff" as="font" type="font/woff" crossorigin> -->
+    <!-- <link rel="preload" href="./preload&prefetch/testLoad.js"  as="script"> -->
+    <!-- <link rel="prefetch" href="./preload&prefetch/testLoad.js" as="script"> -->
+    <!-- <script src="./defer&async/1.js" type="text/javascript" charset="utf-8" defer></script> -->
+    <!-- <script src="./defer&async/jquery-3.1.1.min.js" defer></script> -->
   </head>
   <body>
     <!-- <script>console.log('yes')</script> -->
@@ -32,9 +39,11 @@
         document.body.appendChild(script);
       }
       window.addEventListener('DOMContentLoaded',function() {
-        importScript('./b.js')
+        importScript('./defer&async/b.js')
       })
     </script> -->
+    <!-- <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script> -->
+    <!-- <script src="./preload&prefetch/main.js"></script> -->
   </body>
-  <script></script>
 </html>

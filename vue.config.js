@@ -25,6 +25,10 @@ var templateFunction = function (data) {
 
 module.exports = {
   configureWebpack: (config) => {
+    // config.externals = {
+    //   'vue': 'Vue',
+    //   'vue-router': 'VueRouter'
+    // },
     config.resolve.modules = ['node_modules', './src/assets/images']
     // 定义一个插件数组。用来覆盖，在里面使用我们的主角
     const Plugins = [
