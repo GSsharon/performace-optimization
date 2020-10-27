@@ -18,6 +18,8 @@
 
 ### prefetch和preload的应用场景
 css加载【vue中感觉用的比较少，因为webpack已经有所处理】、js加载【对于一些插件类因为有兼容性可以配合defer和async进行服用】、font加载、图片加载、音频加载【比较适合vue中使用，可以在加载包之前进行加载，当然video和audio本身有preload，如果页面较复杂，作用会比较大，如果是活动页要加载背景音乐，可以考虑使用preload-js】
+![Image](./images/dns1.png)
+![Image](./images/dns2.png)
 
 ### prefetch和preload的痛处
 页面不合理或者过多使用预加载，会浪费用户的流量，比如preload资源在load时间3s后检测未被使用则会在控制台提示该操作会导致用户流量浪费
@@ -30,3 +32,4 @@ css加载【vue中感觉用的比较少，因为webpack已经有所处理】、j
 2）preload 资源（通过 <link rel=“preload"> 标签预加载）、 script 、 xhr 请求；
 3）图片、语音、视频；
 4）prefetch预读取的资源
+

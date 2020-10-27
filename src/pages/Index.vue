@@ -5,7 +5,6 @@
             您的浏览器不支持 video 标签。
         </video> -->
         <span class="iconfont"></span>
-        <img src="https://uat.vipthink.cn/activity/market/wd_pay_giftbag/images/page-bottom-logo.247b4a4.png" alt="">
     </div>
 </template>
 <style lang="scss" scoped>
